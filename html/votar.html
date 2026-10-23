@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Votar | Predicción Balón de Oro</title>
+</head>
+<body>
+
+  <header>
+    <h1>Predicción del Balón de Oro</h1>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="analisis.html">Análisis</a>
+      <a href="candidatos.html">Candidatos</a>
+      <a href="prediccion.html">Predicción</a>
+      <a href="votar.html">Votar</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Vota tu Balón de Oro</h2>
+    <p>
+      ¿Coincides con nuestra <a href="prediccion.html">predicción</a>?
+      Rellena el formulario y dinos quién crees tú que ganará.
+      Los campos marcados con <strong>*</strong> son obligatorios.
+    </p>
+
+    <section>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Tus datos</legend>
+
+          <p>
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="40">
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico *</label>
+            <input type="email" id="correo" name="correo" required>
+          </p>
+
+          <p>
+            <label for="movil">Móvil (9 cifras)</label>
+            <input type="text" id="movil" name="movil" pattern="[0-9]{9}" title="Escribe 9 cifras, sin espacios">
+          </p>
+
+          <p>
+            <label for="edad">Edad *</label>
+            <input type="number" id="edad" name="edad" min="12" max="99" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tu voto</legend>
+
+          <p>
+            <label for="favorito">Tu favorito para ganar *</label>
+            <input type="text" id="favorito" name="favorito" list="lista-candidatos" required>
+            <datalist id="lista-candidatos">
+              <option value="Lamine Yamal">
+              <option value="Ousmane Dembélé">
+              <option value="Kylian Mbappé">
+              <option value="Harry Kane">
+              <option value="Raphinha">
+            </datalist>
+          </p>
+
+          <p>
+            <label for="puesto">¿En qué puesto crees que quedará Lamine Yamal? *</label>
+            <select id="puesto" name="puesto" required>
+              <option value="">-- Elige una opción --</option>
+              <option value="1">Primero</option>
+              <option value="2">Segundo</option>
+              <option value="3">Tercero</option>
+              <option value="4">Cuarto</option>
+              <option value="5">Quinto</option>
+            </select>
+          </p>
+
+          <p>Lo que más pesa para ti: *</p>
+          <p>
+            <input type="radio" id="goles" name="criterio" value="goles" required>
+            <label for="goles">Los goles</label>
+
+            <input type="radio" id="titulos" name="criterio" value="titulos">
+            <label for="titulos">Los títulos</label>
+
+            <input type="radio" id="juego" name="criterio" value="juego">
+            <label for="juego">El juego en equipo</label>
+          </p>
+
+          <p>Qué datos miras antes de votar:</p>
+          <p>
+            <input type="checkbox" id="c-estadisticas" name="datos" value="estadisticas">
+            <label for="c-estadisticas">Estadísticas</label>
+
+            <input type="checkbox" id="c-videos" name="datos" value="videos">
+            <label for="c-videos">Vídeos de jugadas</label>
+
+            <input type="checkbox" id="c-prensa" name="datos" value="prensa">
+            <label for="c-prensa">Opiniones de la prensa</label>
+          </p>
+
+          <p>
+            <label for="confianza">Confianza en tu voto:</label>
+            <input type="range" id="confianza" name="confianza" min="0" max="100" value="50"
+                   oninput="resultado.value = confianza.value + '%'">
+            <output id="resultado" name="resultado" for="confianza">50%</output>
+          </p>
+
+          <p>
+            <label for="comentario">Comentario (opcional)</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="40" maxlength="200"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="condiciones" name="condiciones" required>
+          <label for="condiciones">Acepto las condiciones de uso *</label>
+        </p>
+
+        <p>
+          <button type="submit">Enviar voto</button>
+          <button type="reset">Borrar todo</button>
+        </p>
+
+      </form>
+    </section>
+
+    <aside>
+      <h3>Importante</h3>
+      <p>Tu voto es solo una opinión para este proyecto; no se envía a ningún sitio real.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Predicción Balón de Oro · Proyecto HTML5 del IES Gonzalo Nazareno</p>
+  </footer>
+
+</body>
+</html>
