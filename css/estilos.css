@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../fonts/BarlowCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+:root {
+  --cesped: #1e3b2c;
+  --cesped-oscuro: #142a1f;
+  --oro: #e0b65c;
+  --oro-suave: #f1e2bd;
+  --fondo: #f2f4ef;
+  --tinta: #1c2420;
+  --gris: #55615a;
+  --borde: #cdd5cc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Barlow", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--tinta);
+  background: var(--fondo);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Barlow Condensed", "Arial Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+}
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.3rem; }
+
+a { color: var(--cesped); }
+a:hover { color: var(--cesped-oscuro); }
+
+mark { background: var(--oro-suave); padding: 0 0.3rem; }
+
+#cabecera {
+  background: var(--cesped);
+  color: white;
+  padding: 1.5rem 1.25rem;
+  border-bottom: 6px solid var(--oro);
+}
+
+#contenido {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2.5rem;
+}
+
+#contenido section {
+  background: white;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+#pie {
+  background: var(--cesped-oscuro);
+  color: var(--oro-suave);
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.menu, .menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  display: block;
+  padding: 0.4rem 0.9rem;
+  border: 2px solid var(--oro);
+  border-radius: 2rem;
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover, .menu a.activo {
+  background: var(--oro);
+  color: var(--cesped-oscuro);
+}
