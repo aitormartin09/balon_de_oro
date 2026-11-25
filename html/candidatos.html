@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +7,18 @@
 </head>
 <body>
     
-    <header>
+    <header id="cabecera">
         <h1>Candidatos</h1>
-        <nav>
+        <nav class="menu">
             <a href="../index.html">Inicio</a>
             <a href="prediccion.html">Predicción</a>
-            <a href="candidatos.html">Candidatos</a>
+            <a href="candidatos.html" class="activo">Candidatos</a>
             <a href="analisis.html">Análisis</a>
             <a href="votar.html">Vota</a>
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
         <h2>Galería de candidatos</h2>
         <p>
             Estos son los jugadores que, según nuestro criterio, aspiran al <strong>Balón de Oro</strong>. Pasa por cada uno de ellos y compara antes de ver nuestra <a href="prediccion.html">predicción</a>
@@ -26,46 +26,48 @@
 
         <section>
             <h3>Galería de candidatos</h3>
+            <div class="galeria"></div>
 
-            <article>
-                <figure>
-                    <img src="../img/lamine_yamal.jpeg" alt="Lamine Yamal celebrando un gol con el FC Barcelona" width="300">
-                    <figcaption>Lamine Yamal · Extremo · FC Barcelona (España)</figcaption>
-                </figure>
-                <p>Joven <em>talento</em> con un regate y una visión de juego fuera de lo común</p>
-            </article>
+                <article class="tarjeta">
+                     <figure>
+                        <img src="../img/lamine_yamal.jpeg" alt="Lamine Yamal celebrando un gol con el FC Barcelona" width="300">
+                        <figcaption>Lamine Yamal · Extremo · FC Barcelona (España)</figcaption>
+                     </figure>
+                    <p>Joven <em>talento</em> con un regate y una visión de juego fuera de lo común</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="../img/dembele.jpeg" alt="Ousmane Dembélé conduciendo el balón con el PSG" width="300">
-                    <figcaption>Ousmane Dembélé · Extremo · Paris Saint-Germain (Francia)</figcaption>
-                </figure>
-                <p>Velocidad, desborde y mucho peso en los partidos importantes.</p>
-            </article>
+                <article class="tarjeta">
+                    <figure>
+                        <img src="../img/dembele.jpeg" alt="Ousmane Dembélé conduciendo el balón con el PSG" width="300">
+                        <figcaption>Ousmane Dembélé · Extremo · Paris Saint-Germain (Francia)</figcaption>
+                    </figure>
+                    <p>Velocidad, desborde y mucho peso en los partidos importantes.</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="../img/mbappe.jpeg" alt="Kylian Mbappé disparando a portería con el Real Madrid" width="300">
-                    <figcaption>Kylian Mbappé · Delantero · Real Madrid (Francia)</figcaption>
-                </figure>
-                <p>Un goleador <strong>letal</strong> a campo abierto y en el área</p>
-            </article>
+                <article class="tarjeta">
+                    <figure>
+                        <img src="../img/mbappe.jpeg" alt="Kylian Mbappé disparando a portería con el Real Madrid" width="300">
+                        <figcaption>Kylian Mbappé · Delantero · Real Madrid (Francia)</figcaption>
+                    </figure>
+                    <p>Un goleador <strong>letal</strong> a campo abierto y en el área</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="../img/kane.jpeg" alt="Harry Kane remantando de cabeza con el Bayern de Múnich" width="300">
-                    <figcaption>Harry Kane · Delantero · Bayern de Múnich (Inglaterra)</figcaption>
-                </figure>
-                <p>Delantero completo: marca goles y tambień genera juego para el equipo.</p>
-            </article>
+                <article class="tarjeta">
+                    <figure>
+                        <img src="../img/kane.jpeg" alt="Harry Kane remantando de cabeza con el Bayern de Múnich" width="300">
+                        <figcaption>Harry Kane · Delantero · Bayern de Múnich (Inglaterra)</figcaption>
+                    </figure>
+                    <p>Delantero completo: marca goles y tambień genera juego para el equipo.</p>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="../img/raphina.jpeg" alt="Raphinha celebrando una asistencia con el FC Barcelona" width="300">
-                    <figcaption>Raphinha · Extremo · FC Barcelona (Inglaterra)</figcaption>
-                </figure>
-                <p>Combina trabajo defensivo, asistencias y goles desde la banda.</p>
-            </article>
+                <article class="tarjeta">
+                    <figure>
+                        <img src="../img/raphina.jpeg" alt="Raphinha celebrando una asistencia con el FC Barcelona" width="300">
+                        <figcaption>Raphinha · Extremo · FC Barcelona (Inglaterra)</figcaption>
+                    </figure>
+                    <p>Combina trabajo defensivo, asistencias y goles desde la banda.</p>
+                </article>
+            </div>
         </section>
 
         <section>
@@ -80,8 +82,9 @@
 
         <section>
             <h3>Vídeo: candidatos</h3>
+            <div class="video"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tyQZdYvPEwQ?si=x-5SFxaUiBVLo1Wu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        </section>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/tyQZdYvPEwQ?si=x-5SFxaUiBVLo1Wu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
  
        <section>
   <h3>Vídeo: resumen de los candidatos</h3>
@@ -103,7 +106,7 @@
     <figcaption>Audio generado con inteligencia artificial.</figcaption>
   </figure>
 </section>
-        <aside>
+        <aside class="dato">
             <h3>¿Sabías que...</h3>
             <p>
                 El Balón de Oro lo concede la revista <em>France Football</em> desde 1956
@@ -111,7 +114,7 @@
         </aside>
     </main>
 
-    <footer>
+    <footer id="pie">
         <p>&copy; 2026 Predicción Balon de Oro</p>
     </footer>
 </body>
